@@ -20,7 +20,7 @@ jobs:
           runs-on: macos-latest
           steps:
           - name: Step one
-            run: "date -j -u -f "%m/%d/%y %H:%M:%S" +%s "08/08/20 20:20:00""
+            run: date
      job4:
           name: Fourth job
           runs-on: ubuntu-latest
