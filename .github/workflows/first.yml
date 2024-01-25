@@ -1,6 +1,6 @@
 name: Create Artifact
 env: 
-     FILE_NAME: lesson-03-ch
+     FILE_NAME: README
 on: push
 
 jobs:
