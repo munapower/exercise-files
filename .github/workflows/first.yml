@@ -1,6 +1,6 @@
 name: Create Artifact
 env: 
-     FILE_NAME: README
+     FILE_NAME: my_upload
 on: push
 
 jobs:
@@ -13,5 +13,5 @@ jobs:
           - name: Upload
             uses: actions/upload-artifact@v2
             with:
-               name: linux
-               path: ./${{ env.FILE_NAME }}
+               name: ${{ env.FILE_NAME }}
+               path: .
