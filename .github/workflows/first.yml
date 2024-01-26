@@ -26,10 +26,10 @@ jobs:
                     path: .
      release:
                name: Run custom action
-               needs: test
+               needs: build
                runs-on: ubuntu-latest
                steps:
                     - name: Create release
-                      uses: munapower/munaActions@master
+                      uses: munapower/munaActions@main
                       env:
                           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
