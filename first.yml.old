@@ -1,4 +1,4 @@
-name: Run Custom Action
+name: Create Artifact
 env: 
      FILE_NAME: my_upload
 on: push
@@ -24,12 +24,4 @@ jobs:
                  with:
                     name: ${{ env.FILE_NAME }}
                     path: .
-     release:
-               name: Run custom action
-               needs: test
-               runs-on: ubuntu-latest
-               steps:
-                    - name: Create release
-                      uses: munapower/munaActions@master
-                      env:
-                          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
